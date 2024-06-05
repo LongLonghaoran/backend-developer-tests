@@ -28,6 +28,7 @@ class Game
         current_position = players_state[player][:position]
         new_position = player.next_point(time: timer)
 
+        # first move
         if current_position.nil?
           players_state[player][:position] = new_position
           grid.visit(new_position)

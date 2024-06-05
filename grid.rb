@@ -1,5 +1,5 @@
 class Grid
-  attr_accessor :visited, :edges, :size
+  attr_accessor :visited, :edges
 
   def initialize(size:)
     @size = size
